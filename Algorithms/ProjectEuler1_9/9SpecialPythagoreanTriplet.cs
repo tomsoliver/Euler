@@ -11,6 +11,7 @@ namespace Algorithms.ProjectEuler
 
     //There exists exactly one Pythagorean triplet for which a + b + c = 1000.
     //Find the product abc.
+    
     // Gives the answer 31875000 and takes 0.025 seconds
     // Using Euclids formula for pythagorean triples
     // Gives the answer 31875000 and takes 0.0008 seconds

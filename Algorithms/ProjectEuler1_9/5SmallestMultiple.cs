@@ -14,7 +14,7 @@ namespace Algorithms.ProjectEuler
         // 100 takes 0.01 seconds
         public static BigInteger Execute()
         {
-            const int max = 100;
+            const int max = 20;
             var primeFactors = new Dictionary<int, int>();
 
             for (var i = 1; i <= max; i++)

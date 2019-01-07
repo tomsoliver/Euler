@@ -11,14 +11,13 @@ namespace Algorithms
             var timer = new Stopwatch();
 
             timer.Start();
-            var result = _11LargestProductInAGrid.Execute();
+            var result = _21AmicableNumbers.Execute();
             timer.Stop();
 
-            Console.WriteLine("*************************************");
-            Console.WriteLine("Result: " + result);
-            Console.WriteLine("Time taken: " + timer.Elapsed);
-            Console.WriteLine("*************************************");
-            Console.ReadLine();
+            Debug.WriteLine("*************************************");
+            Debug.WriteLine("Result: " + result);
+            Debug.WriteLine("Time taken: " + timer.Elapsed);
+            Debug.WriteLine("*************************************");
         }
     }
 }

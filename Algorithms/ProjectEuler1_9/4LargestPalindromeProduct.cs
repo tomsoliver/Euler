@@ -13,7 +13,7 @@ namespace Algorithms.ProjectEuler
         public static int Execute()
         {
             var largestPalindrome = 0;
-            var largestValue = 999999999;
+            var largestValue = 999;
 
             for (var i = largestValue; i > 0; i--)
             {

@@ -27,7 +27,7 @@ namespace Algorithms.ProjectEuler10_99
         // Gives 76576500 and takes 0.55 seconds
         public static double Execute()
         {
-            const int divisorCount = 1000;
+            const int divisorCount = 500;
             double value = 0;
             double previousTriangleMax = 0;
             

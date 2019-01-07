@@ -20,7 +20,7 @@ namespace Algorithms.ProjectEuler
         // 10000000 takes 0.00065 seconds
         public static BigInteger Execute()
         {
-            long max = 10000000;
+            long max = 100;
 
             // Find sum of squares
             BigInteger sumOfSquares = max * (max + 1) * (2 * max + 1) / 6;

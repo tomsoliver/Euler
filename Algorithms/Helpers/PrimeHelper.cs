@@ -84,5 +84,30 @@ namespace Algorithms.Helpers
 
             return Primes.Where(s => s < value);
         }
+
+        public static IEnumerable<double> GetFactors(double value)
+        {
+            var divisors = new List<double>();
+
+            // Get all primes less than value
+            var root = Math.Sqrt(value);
+
+            //If sqrt is whole add to divisors
+            if (Math.Abs(Math.Floor(root) - root) < double.Epsilon) divisors.Add(root);
+
+            var primes = GetAllPrimesLessThanValue(Math.Ceiling(root));
+            foreach (var prime in primes)
+            {
+                for (var i = prime; i <= root; i += prime)
+                {
+                    if (!(Math.Abs(value % i) < double.Epsilon)) continue;
+
+                    divisors.Add(i);
+                    divisors.Add(value / i);
+                }
+            }
+
+            return divisors;
+        }
     }
 }

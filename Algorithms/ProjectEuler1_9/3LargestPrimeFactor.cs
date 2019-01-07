@@ -12,7 +12,7 @@ namespace Algorithms.ProjectEuler
         //What is the largest prime factor of the number 600851475143 ?
         public static long Execute()
         {
-            const long value = 600851475143124542;
+            const long value = 600851475143;
             long largestPrime = 0;
             var max = Math.Ceiling(Math.Sqrt(value));
 

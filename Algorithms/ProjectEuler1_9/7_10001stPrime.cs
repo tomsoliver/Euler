@@ -12,7 +12,7 @@ namespace Algorithms.ProjectEuler
         /// </summary>
         public static int Execute()
         {
-            var maxPrimeCount = 500000;
+            var maxPrimeCount = 10001;
 
             // Skip first 3 primes
             var primeCount = 3;
